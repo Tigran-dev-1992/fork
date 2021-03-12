@@ -1,7 +1,5 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { DevDataType } from '../../API/api'
-import 'aos/dist/aos.css';
-import Aos from 'aos'
 
 
 
@@ -10,13 +8,11 @@ type PropsType = {
 }
 const Developer: React.FC<PropsType> = ({ developers }) => {
 
-    useEffect(() => { Aos.init({ duration: 1500 }) }, [])
-    
     return (
         <div className="developer d-flex text-center justify-content-center">
             {developers.map((dev: DevDataType) => {
                 return (
-                    <div key={dev.id} className="developer__item text-center  " data-aos="zoom-in-up">
+                    <div key={dev.id} className="developer__item text-center  " >
                         <img src={dev.img} alt="someImage" />
                         <b>UserName : <span>{dev.userName}</span></b>
                         <b>RepoName : <span>{dev.repoName}</span></b>
