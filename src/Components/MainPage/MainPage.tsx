@@ -1,4 +1,5 @@
 import Aos from 'aos'
+import 'aos/dist/aos.css';
 import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { errorSelector, loadingSelector } from '../../Selectors/devSelectors'
