@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
 import Aos from 'aos'
+import React, { useEffect } from 'react'
 import { DevDataType } from '../../API/api'
 
 

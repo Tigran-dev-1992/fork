@@ -1,10 +1,11 @@
+import Aos from 'aos'
 import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { errorSelector, loadingSelector } from '../../Selectors/devSelectors'
 import Error from '../Error'
 import Preloder from '../PreLoader/Preloader'
 import SearchFormContainer from './SearchFormContainer'
-import Aos from 'aos'
+
 
 
 const MainPage = () => {
