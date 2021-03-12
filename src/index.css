@@ -1,0 +1,201 @@
+@import 'bootstrap/dist/css/bootstrap.css';
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  background: #F3F1EF;
+}
+
+.preloader img {
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.app {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1400px;
+  padding-top: 10px;
+}
+
+.navbar {
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  background: #000;
+  color: white;
+  position: fixed;
+  width: 100%;
+}
+.navbar a {
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.navbar__items {
+  margin: auto 0;
+}
+
+.navbar__item {
+  margin-right: 20px;
+}
+.navbar__item .active {
+  color: yellow;
+}
+
+.mainPage {
+  margin-top: 100px;
+  font-size: calc(18px + 18 * (100vw / 1400));
+}
+
+.mainPage__info {
+  font-size: calc(18px + 18 * (100vw / 1400));
+  max-width: 30%;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.main__result {
+  margin-top: 30px;
+}
+
+.empety, .error {
+  font-size: calc(18px + 18 * (100vw / 1400));
+  margin-top: 30px;
+}
+
+.developer {
+  color: black;
+  font-size: 16px;
+  flex-wrap: wrap;
+}
+.developer span {
+  font-weight: normal;
+}
+.developer b {
+  display: block;
+}
+.developer img {
+  max-width: 150px;
+  height: 150px;
+  border-radius: 200px;
+}
+
+.developer__item {
+  width: 300px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.form-control {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.form button {
+  max-width: 300px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form__info {
+  font-size: calc(16px + 18 * (100vw / 1400));
+  margin: 40px;
+}
+
+.paginator {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.paginator span {
+  cursor: pointer;
+}
+
+.pageNumber {
+  margin: 5px;
+}
+
+.toggler {
+  background: #9a9a9a;
+  padding: 5px;
+}
+
+.currentPage {
+  color: #007BFF;
+}
