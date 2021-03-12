@@ -1,7 +1,7 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
+import React, { useEffect } from 'react'
+import Aos from 'aos'
 import { DevDataType } from '../../API/api'
-import { developersSelector } from '../../Selectors/devSelectors'
+
 
 
 type PropsType = {
@@ -9,11 +9,13 @@ type PropsType = {
 }
 const Developer: React.FC<PropsType> = ({ developers }) => {
 
+    useEffect(() => { Aos.init({ duration: 1500 }) }, [])
+    
     return (
         <div className="developer d-flex text-center justify-content-center">
             {developers.map((dev: DevDataType) => {
                 return (
-                    <div key={dev.id} className="developer__item text-center ">
+                    <div key={dev.id} className="developer__item text-center  " data-aos="zoom-in-up">
                         <img src={dev.img} alt="someImage" />
                         <b>UserName : <span>{dev.userName}</span></b>
                         <b>RepoName : <span>{dev.repoName}</span></b>
